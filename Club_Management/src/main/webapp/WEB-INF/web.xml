@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+  <display-name>Club_Management</display-name>
+
+<servlet>
+    <servlet-name>ClubListingServlet</servlet-name>
+    <servlet-class>com.Servlet.ClubListingServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ClubListingServlet</servlet-name>
+    <url-pattern>/club-listing</url-pattern>
+</servlet-mapping>
+ 
+ <servlet>
+    <servlet-name>Blog</servlet-name>
+    <servlet-class>com.Servlet.Blog</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Blog</servlet-name>
+    <url-pattern>/blogform</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>AddEvent</servlet-name>
+    <servlet-class>com.Servlet.AddEvent</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AddEvent</servlet-name>
+    <url-pattern>/addEvent</url-pattern>
+</servlet-mapping>
+
+</web-app>
